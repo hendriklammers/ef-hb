@@ -6,3 +6,4 @@ node_modules
 elm-stuff
 dist
 .env
+.stack-work
