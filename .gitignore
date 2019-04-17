@@ -7,3 +7,4 @@ elm-stuff
 dist
 .env
 .stack-work
+.cache

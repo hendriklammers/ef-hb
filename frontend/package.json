@@ -1,0 +1,17 @@
+{
+  "name": "ef-hb",
+  "version": "1.0.0",
+  "description": "Elm frontend with Haskell backend",
+  "scripts": {
+    "start": "parcel watch index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "Hendrik Lammers <lammers@gmail.com> (http://www.hendriklammers.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "elm-hot": "^1.0.1",
+    "node-elm-compiler": "^5.0.3",
+    "parcel-bundler": "^1.12.3"
+  }
+}
