@@ -20,4 +20,6 @@ executable server
   build-depends:       base >= 4.7 && < 5,
                        scotty,
                        wai-middleware-static,
-                       wai-extra
+                       wai-extra,
+                       aeson
+  other-modules:       User
