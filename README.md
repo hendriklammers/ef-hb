@@ -16,10 +16,11 @@ $ stack exec server
 
 ## Client
 
-Make sure you have a recent version of node and npm installed.
-All commands for the client should be run from the `client` directory.
+Make sure you have a recent version of node and npm installed.  
+All `npm` commands should be run from the **client** directory.
 
 ```
+$ cd client
 $ npm install
 $ npm start
 ```
