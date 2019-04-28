@@ -17,7 +17,7 @@ $ stack exec server
 ## Client
 
 Make sure you have a recent version of node and npm installed.
-All commands for the client should be run from the `frontend` directory.
+All commands for the client should be run from the `client` directory.
 
 ```
 $ npm install
