@@ -1,7 +1,8 @@
 module Main exposing (main)
 
 import Browser
-import Html exposing (Html, table, td, text, th, tr)
+import Html exposing (Html, table, tbody, td, text, th, thead, tr)
+import Html.Attributes as H
 import Http
 import Json.Decode as Decode exposing (Decoder)
 
@@ -56,17 +57,20 @@ update msg model =
 
 view : Model -> Html Msg
 view users =
-    table []
-        (tr []
-            [ th []
-                [ text "id" ]
-            , th []
-                [ text "name" ]
-            , th []
-                [ text "email" ]
+    table [ H.class "table is-striped" ]
+        [ thead []
+            [ tr []
+                [ th []
+                    [ text "id" ]
+                , th []
+                    [ text "name" ]
+                , th []
+                    [ text "email" ]
+                ]
             ]
-            :: List.map viewUser users
-        )
+        , tbody []
+            (List.map viewUser users)
+        ]
 
 
 viewUser : User -> Html Msg
